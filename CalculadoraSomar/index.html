@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluladora</title>
+
+</head>
+<body>
+    <h1>Calculadora Somar</h1>
+
+    Numero 01<br />
+    <input id="n1" type="number"/><br />
+    Numero 02<br />
+    <input id="n2" type="number"/><br />
+
+    <button onclick="somar()"> Somar</button>
+
+    O resultado é <span></span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('span')
+
+        function somar(){
+    
+         alert( "o resuldado e " + (resultado.innerHTML = parseFloat(n1.value) + parseFloat(n2.value)))
+        
+        }
+    </script>
+
+    
+</body>
+</html>
